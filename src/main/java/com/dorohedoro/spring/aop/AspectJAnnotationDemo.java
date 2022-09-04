@@ -14,10 +14,6 @@ public class AspectJAnnotationDemo {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = null;
         try {
-            //context = new AnnotationConfigApplicationContext();
-            //context.register(AspectJAnnotationDemo.class);
-            //context.refresh();
-
             context = new AnnotationConfigApplicationContext(AspectJAnnotationDemo.class);
 
             AspectJAnnotationDemo bean = context.getBean(AspectJAnnotationDemo.class);
