@@ -1,13 +1,9 @@
 package com.dorohedoro.spring.aop;
 
-import com.dorohedoro.spring.aop.config.AspectConfiguration;
+import com.dorohedoro.spring.aop.aspect.AspectConfiguration;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.annotation.Aspect;
 import org.springframework.aop.MethodBeforeAdvice;
 import org.springframework.aop.aspectj.annotation.AspectJProxyFactory;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
