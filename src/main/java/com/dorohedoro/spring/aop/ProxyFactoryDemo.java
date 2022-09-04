@@ -4,7 +4,6 @@ import com.dorohedoro.intro.DefaultEchoService;
 import com.dorohedoro.intro.EchoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.framework.ProxyFactory;
-import org.springframework.aop.framework.ProxyFactoryBean;
 
 @Slf4j
 public class ProxyFactoryDemo {

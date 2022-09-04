@@ -12,7 +12,6 @@ import java.util.UUID;
 public class JdkDynamicProxyDemo {
     public static void main(String[] args) {
         MDC.put("TIMESTAMP", String.valueOf(System.currentTimeMillis()));
-        MDC.put("LOG_ID", UUID.randomUUID().toString().replace("-", ""));
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         Object proxy = Proxy.newProxyInstance(classLoader, new Class[]{EchoService.class}, new InvocationHandler() {
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
