@@ -16,7 +16,7 @@ public class ProxyFactoryBeanDemo {
         DefaultEchoService echoService = new DefaultEchoService();
         ProxyFactoryBean proxyFactoryBean = new ProxyFactoryBean();
         proxyFactoryBean.setTarget(echoService);
-        proxyFactoryBean.addAdvice(new EchoServiceMethodInterceptor());
+        proxyFactoryBean.addAdvice(new DefaultMethodInterceptor());
         return proxyFactoryBean;
     }
     

@@ -7,7 +7,7 @@ import org.aopalliance.intercept.MethodInvocation;
 import java.lang.reflect.Method;
 
 @Slf4j
-public class EchoServiceMethodInterceptor implements MethodInterceptor {
+public class DefaultMethodInterceptor implements MethodInterceptor {
     @Override
     public Object invoke(MethodInvocation invocation) throws Throwable {
         Method method = invocation.getMethod();

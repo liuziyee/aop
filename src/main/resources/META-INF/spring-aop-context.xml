@@ -14,7 +14,7 @@
     
     <bean id="echoService" class="com.dorohedoro.intro.DefaultEchoService"/>
     
-    <bean id="echoServiceMethodInterceptor" class="com.dorohedoro.spring.aop.EchoServiceMethodInterceptor"/>
+    <bean id="echoServiceMethodInterceptor" class="com.dorohedoro.spring.aop.DefaultMethodInterceptor"/>
     
     <bean id="echoServiceProxyFactoryBean" class="org.springframework.aop.framework.ProxyFactoryBean">
         <property name="targetName" value="echoService"/>
