@@ -1,6 +1,6 @@
 package com.dorohedoro.spring.aop;
 
-import com.dorohedoro.spring.aop.aspect.AspectConfiguration;
+import com.dorohedoro.spring.aop.aspect.DefaultAspectConfiguration;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.MethodBeforeAdvice;
 import org.springframework.aop.aspectj.annotation.AspectJProxyFactory;
@@ -14,7 +14,7 @@ public class AspectJProxyFactoryDemo {
     public static void main(String[] args) {
         Map<String, Object> cache = new HashMap<>();
         AspectJProxyFactory proxyFactory = new AspectJProxyFactory(cache);
-        proxyFactory.addAspect(AspectConfiguration.class);
+        proxyFactory.addAspect(DefaultAspectConfiguration.class);
 
         proxyFactory.addAdvice(new MethodBeforeAdvice() {
             @Override
