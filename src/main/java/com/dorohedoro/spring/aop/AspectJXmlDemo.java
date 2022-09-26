@@ -1,6 +1,6 @@
 package com.dorohedoro.spring.aop;
 
-import com.dorohedoro.intro.EchoService;
+import com.dorohedoro.common.EchoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

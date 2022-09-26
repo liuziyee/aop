@@ -1,4 +1,4 @@
-package com.dorohedoro.intro;
+package com.dorohedoro.common;
 
 import java.lang.reflect.Method;
 

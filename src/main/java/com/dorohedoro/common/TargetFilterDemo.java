@@ -1,4 +1,4 @@
-package com.dorohedoro.intro;
+package com.dorohedoro.common;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.ReflectionUtils;
@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 public class TargetFilterDemo {
     public static void main(String[] args) throws Exception {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        Class clazz = classLoader.loadClass("com.dorohedoro.intro.EchoService");
+        Class clazz = classLoader.loadClass("com.dorohedoro.common.EchoService");
 
         Method echo = ReflectionUtils.findMethod(clazz, "echo", String.class);
         log.info("{}", echo);

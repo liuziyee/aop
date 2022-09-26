@@ -1,4 +1,4 @@
-package com.dorohedoro.intro;
+package com.dorohedoro.common;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cglib.proxy.Enhancer;

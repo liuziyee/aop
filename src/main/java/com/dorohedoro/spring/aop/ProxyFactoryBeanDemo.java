@@ -1,7 +1,7 @@
 package com.dorohedoro.spring.aop;
 
-import com.dorohedoro.intro.DefaultEchoService;
-import com.dorohedoro.intro.EchoService;
+import com.dorohedoro.common.DefaultEchoService;
+import com.dorohedoro.common.EchoService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.aop.framework.ProxyFactoryBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
